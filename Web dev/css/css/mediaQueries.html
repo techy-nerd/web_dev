@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queriers</title>
+    <style>
+        body{
+            background-color: rgb(253, 239, 219);
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .box{
+                flex-direction: column;
+            }
+            
+        }
+        
+        .boxes{
+            background-color: palegreen;
+            height:255px;
+            width: 455px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+        .box{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey, Iam good.
+    </div>
+    <div class="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>

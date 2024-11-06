@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    
+     <style>
+        /* UNIVERSAL selector--applied everywhere */
+        *{
+            font-style: italic;
+        }
+        /* ELEMENT selector--applied on specific element only */
+        p{
+            color: blueviolet;
+        }
+        /* Group selector--applied on more than one element only */
+        p,h1{
+            text-decoration:underline;
+        }
+        /* Child selector--applied on the direct child of element */
+        div>p{
+            text-align: center;
+        }
+        /* Descendent selector--applied on the descedent of element */
+        div ol{
+            text-decoration-line:line-through;
+        }
+        /* ID selector--applied on the id of element */
+        #red{
+            color: red;
+        }
+        /* CLASS selector--applied on the same classes of element */
+        .pink{
+            color: pink;
+        }
+        /* Pseudo selector--applied on the element when they fulfill certain conditions */
+        a:hover{
+            background-color:azure;
+        }
+        a:link{
+            color: burlywood;
+        }
+        /* First child selector--applied on the element's  first child */
+        p:first-child{
+            background-color: aqua;
+        }
+        /* Attribute selector--applied on the  specific element's   */
+        [data='x']{color:orange}
+     </style>
+</head>
+<body>
+    <h1>Learning about css selectors</h1>
+
+    <p>I am used to show element and group selector</p>
+
+    <div>
+    <p>I am div's child and used to show Child selector</p>
+    </div>
+
+    <div>
+        <p>
+            <ol><li>apple--used to show descedent</li>
+            </ol>
+        </p>
+    </div>
+
+    <h2 id="red">Hi, iam RED--showing ID selectors</h2>
+    <h2>Hi, iam RED</h2>
+
+    <h2 class="pink">Hi, iam PINK--showing CLASS selectors</h2>
+    <h2>Hi, iam PINK</h2>
+
+    <a target="_blank" href="https://www.google.com">HI GOOGLE--for Pseudo</a>
+
+    <p data="x">Attribute SELECTOR</p>
+
+</body>
+</html>

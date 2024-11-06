@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --color:pink;
+        }
+        *{
+            background-color: rgb(248, 237, 223);
+        }
+        div{
+            /* using global color */
+            /* background-color: var(--color); */
+
+            /* using local colour */
+            --color:rgb(187, 187, 235);
+            background-color: var(--color);
+            width: 60vw;
+        }
+        button{
+            background-color: bisque;
+            position: relative;
+            margin-top: 10px;;
+        }
+        p{
+            background-color: var(--color);
+            width: 60vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic voluptas harum pariatur corporis, cupiditate illo sapiente minus, sunt enim omnis quae commodi! Doloremque id deleniti doloribus numquam quas, nam aliquam vel quos magnam hic exercitationem veniam quasi in? Voluptas enim nesciunt vitae.
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa vero modi at repellat totam officiis voluptas facilis nemo perspiciatis est possimus asperiores laborum aspernatur eos, consequatur unde cupiditate quasi accusantium, commodi ut ratione, praesentium a! Beatae eaque repellat doloribus nobis! Modi quam maxime recusandae illo.</p>
+    <button>Bye Bye</button>
+</body>
+</html>

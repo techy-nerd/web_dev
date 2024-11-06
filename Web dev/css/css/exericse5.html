@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --ulColour: plum;
+            --parentC: blanchedalmond;
+            --firstbg: rgb(156, 248, 217);
+            --secondbg: rgb(255, 217, 224);
+            --color: white;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        ul {
+            display: flex;
+            background-color: var(--ulColour);
+            width: 100%;
+            height: 30px;
+        }
+
+        li {
+            padding: 0px 40px;
+            list-style-type: none;
+            font-size: x-large;
+        }
+
+        .parent {
+            background-color: var(--parentC);
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+
+        }
+
+        div>div {
+            flex-direction: column;
+            width: 35vw;
+            height: 480px;
+            border: 2px solid black;
+            margin: 40px;
+            padding-top: 30px;
+        }
+
+        .first {
+            background-color: var(--firstbg);
+        }
+
+        .second {
+            background-color: var(--secondbg);
+        }
+
+        .content {
+            color: var(--color);
+            font-size: xx-large;
+            margin: 20px;
+            border: 2px solid var(--color);
+            border-radius: 45px;
+            height: auto;
+            text-align: center;
+            padding: 130px 0px;
+        }
+
+        .foot {
+            background-color: var(--color);
+            height: 40px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        /* IMPORTANT PART!!!!!!!!!!! */
+        .img img {
+            border-radius: 30px;
+            border: 4px solid grey;
+            /* justify-content: end; */
+            position: fixed;
+            z-index: 1;
+            right: 10px;
+            bottom: 20px;
+        }
+
+        .first img {
+            margin-left: 20px;
+
+            display: flex;
+            justify-content:centre;
+            /* Center horizontally */
+            align-items: center;
+        }
+
+        .second img {
+            margin-left: 35px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="parent">
+            <div class="first">
+                <img src="https://media.dev.to/cdn-cgi/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwhh1lpihw7h587pb2iuc.png"
+                    width="500px" height="420px">
+            </div>
+            <div class="second">
+                <img src="https://cdn.prod.website-files.com/606a802fcaa89bc357508cad/611432b386bb6d5c574f91f3_1.png"
+                    width="450px" height="420px">
+            </div>
+        </div>
+        <div class="content">
+            Welcome to this Sigma WEB DEVLOPMENT EXPRESS
+
+        </div>
+        <div class="img">
+            <img src="https://img.freepik.com/premium-vector/copyright-symbol-icon-vector-illustration-eps-10-stock-image_797523-1929.jpg"
+                width="60px">
+        </div>
+
+    </main>
+    <footer>
+        <div class="foot">You can learn FULL STACK DEVLOPMENT through this course
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(147, 246, 253);
+        }
+        :root{
+            --color: rgb(255, 138, 138);
+            --seccolor:rgb(147, 147, 255);
+            --colorfhov: rgb(0, 17, 65);
+            --seccolorhov: rgba(36, 253, 8, 0.76);
+            --defhov: rgb(236, 253, 0);
+            --bghov: rgb(0, 81, 255);
+            --defop: 0.5;
+            --bradi: 30px;
+        }
+        .nav ul li{
+            display:inline;
+            list-style: none;
+            padding: 13px;
+            margin-left: 20px;
+            border: 2px solid var(--color);
+            border-radius: 16px;
+        }
+        ul li:hover{
+            color: var(--defhov);
+            background-color: var(--bghov);
+            opacity: var(--defop);
+        }
+        ul li:first-child:hover{
+            color: var(--colorfhov);
+            background-color: var(--seccolorhov);
+            border-radius: var(--bradi);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Activity</li>
+                <li>Contact Us</li>
+        </nav>
+    </div>    
+</body>

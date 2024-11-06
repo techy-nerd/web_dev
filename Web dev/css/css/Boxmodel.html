@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .blue{
+            background-color: aqua;
+        }
+        .red{
+            color: red;
+            margin: 15px;
+            padding: 10px;
+            height: 30px;
+            box-sizing: border-box; 
+            /* Box's size will become such that it will include all attributes overall */
+        }
+        .black{
+            color: black;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue red">Hi,I am box A</div>
+    <div class="blue black">Hi,I am box B</div>
+</body>
+</html>
