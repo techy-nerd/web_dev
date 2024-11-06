@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Fill the form</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username" placeholder="enter your username" autofocus >
+        </div>
+
+        <div>
+            <label>Enter your gender</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+
+        <div>
+            <label for="guidelines">Have you read the guidelines</label>
+            <input type="checkbox" name="guidelines" id="guidelines" value="yes">
+        </div>
+        
+
+        <div>
+            <label>Enter your  course</label>
+            <select name="course">
+                <option value="BTECH">BTECH</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Please enter your form filling experience</label>
+            <br>
+            <textarea id="comment"  name="comment" rows="4" cols="50" required></textarea>
+
+        </div>
+    </form>
+</body>
+</html>
